@@ -1,3 +1,5 @@
+SYSTEM_BIN="`systemd-path user-binaries`"
+
 build:
 	touch texi
 	printf "#!" > texi
@@ -9,3 +11,7 @@ build:
 	cat src/config.rb >> texi
 	cat main.rb >> texi
 	chmod +x texi
+
+install:
+	mkdir -p $(SYSTEM_BIN)
+	cp texi $(SYSTEM_BIN)
