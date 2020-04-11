@@ -1,9 +1,9 @@
 require "rmagick"
 require "json"
 
-require "./colors"
-require "./imager"
-require "./fit_text"
+require "./src/colors"
+require "./src/imager"
+require "./src/fit_text"
 
 include Magick
 

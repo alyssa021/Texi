@@ -1,3 +1,5 @@
+require "./src/config"
+
 def generateImage(text)
   width = 500
   height = 500
@@ -12,7 +14,7 @@ def generateImage(text)
   text_img.annotate(img, 0, 0, 0, 0, fit_text(text, width)) { |txt|
     txt.gravity = CenterGravity
     txt.pointsize = 22
-    txt.font = './fonts/BalooPaaji2-Bold.ttf'
+    txt.font = FONT
     txt.font_weight = Magick::BoldWeight
     txt.fill = "##{COLORS[color_combi + 1]}"
   }
