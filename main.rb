@@ -1,1 +1,9 @@
-generateImage("this ajfdalsjdflajslfjasdlfja;sfdlakjsdf;alsjdf asdfa sdlf;a sdfaj sfja;sdfja lsdfj als fals df;asjfdladsjfa sdf asdf alsdf alj sdfa sflasdfl adfjasd fjalsd fas dfa sdf asdf ad fas dfa sdf adf")
+FileUtils.mkdir_p 'images/'
+
+image_no = 0
+for item in $data
+  filename = "#{image_no}.jpg"
+  generateImage(item["text"], item["category"], filename)
+
+  image_no += 1
+end

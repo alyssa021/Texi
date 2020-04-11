@@ -18,6 +18,7 @@ else
 end
 
 if File.exist?(DATA_FILE)
+  file = File.open DATA_FILE
   $data = JSON.load file
 else
   print("'data.json' not found' please put data.json in your project root folder")
