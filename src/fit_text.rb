@@ -3,7 +3,7 @@ def text_fit?(text, width)
   drawing = Draw.new
   drawing.annotate(tmp_image, 0, 0, 0, 0, text) { |txt|
     txt.gravity = Magick::NorthGravity
-    txt.pointsize = 43
+    txt.pointsize = 29
     txt.fill = "#ffffff"
     txt.font = FONT
     txt.font_weight = Magick::BoldWeight

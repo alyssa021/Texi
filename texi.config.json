@@ -1,4 +1,4 @@
 {
-  "font": "helvetica",
+  "font": "./fonts/BalooPaaji2-Bold.ttf",
   "data": "data.json"
 }
