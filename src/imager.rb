@@ -1,4 +1,6 @@
 def generateImage(text, category, filename)
+  print "Generating: images/#{category}/#{filename}\n"
+
   width = 500
   height = 500
   color_combi = rand(COLORS.length / 2) * 2
