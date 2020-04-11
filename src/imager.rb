@@ -1,5 +1,3 @@
-require "./src/config"
-
 def generateImage(text)
   width = 500
   height = 500

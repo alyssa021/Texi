@@ -1,3 +1,4 @@
 {
-  "font": "helvetica"
+  "font": "helvetica",
+  "data": "data.json"
 }

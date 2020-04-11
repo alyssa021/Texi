@@ -66,5 +66,3 @@ COLORS = [
   "00B1D2FF", # Blue Atoll
   "FDDB27FF", # Vibrant Yellow
 ]
-
-
